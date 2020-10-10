@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="rtl" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,24 +11,25 @@
       <h1>الحاسبة 🔢</h1>
 
       <div class="directions">أدخل درجاتك، كل درجة في الحقل الخاص بها</div>
-
-      <input id="Quizes" type="text" />
-      <input id="Midterm" type="text" />
-      <input id="FinalTest" type="text" />
-      <input id="Oral" type="text" />
-
+      <label> Quizes </label> <br> <input id="Quizes" type="text" /><br>
+      <label> Midterm </label> <br> <input id="Midterm" type="text" /><br>
+      <label> FinalTest </label> <br> <input id="FinalTest" type="text" /><br>
+      <label> Oral</label> <br> <input id="Oral" type="text" /><br>
+    <br>
       <input
         id="submitButton"
         type="button"
         value="calculate"
-        onClick="submit()"
-      />
-
-      <p>مجموع درجاتك (بالأرقام) هو</p>
+        onClick="gradecalc()"
+        />
+        
+      <p>مجموع درجاتك  هو</p>
       <div id="total_grades"></div>
 
-      <p>درجتك النهائية هي (بالأحرف)</p>
+      <p>درجتك النهائية هي </p>
       <div id="final_grade"></div>
     </div>
-  </body>
+
+    <script src="./script.js"></script>
+    </body>
 </html>
